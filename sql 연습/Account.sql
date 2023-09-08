@@ -20,4 +20,4 @@ UPDATE ACCOUNT SET balance = balance - 5000 WHERE id = '10001';
 SELECT * FROM ACCOUNT WHERE id = '10001';
 
 -- allAccountInfo
-SELECT * FROM ACCOUNT;
+SELECT * FROM account;

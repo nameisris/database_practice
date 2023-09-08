@@ -21,6 +21,9 @@ GRANT ALL PRIVILEGES ON *.* TO 'kosta';
 -- kosta 계정에 부여된 권한 확인
 SHOW GRANTS FOR 'kosta';
 
+-- GRANT USAGE ON *.* TO 'kosta'
+-- USAGE 권한 지정자는 권한 없음을 나타냄 (권한은 없지만 계정은 있음을 의미)
+
 -- kosta 계정에서 update 권한 삭제
 REVOKE UPDATE ON testdb.* FROM 'kosta';
 
