@@ -12,3 +12,5 @@ CREATE TABLE player(
 	backnum INT,
 	teamnum INT REFERENCES team(num)player
 );
+
+select p.num, p.name, p.backnum, p.teamnum, t.name from player p join team on p.teamnum = t.num where backnum = 1;
