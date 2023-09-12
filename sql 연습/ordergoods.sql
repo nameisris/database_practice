@@ -11,7 +11,7 @@ CREATE TABLE orders (
 	customer VARCHAR(100),
 	productcode VARCHAR(100) REFERENCES goods(CODE),
 	amount INT,
-	iscanceled BOOLEAN
+	iscanceled BOOLEAN DEFAULT 0
 );
 
 DROP TABLE goods;
